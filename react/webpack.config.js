@@ -5,6 +5,7 @@ const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const program = require('commander');
 
+
 program
   .option('-m, --mode', 'mode development or production');
 
@@ -17,7 +18,6 @@ const publicPath = '/';
 const SRC = path.join(__dirname, './', 'src');
 
 const PREFIX = "/api";
-const target = 'http://localhost:3001';
 
 module.exports = function () {
 
